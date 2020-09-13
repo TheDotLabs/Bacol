@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+	package="com.github.amitkma.helloandroid" 
+
+	android:versionCode="10001" 
+	android:versionName="1.0.1">
+
+	<uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29" />
+        
+    <application android:label="HelloAndroidFromCLI"
+    	android:theme="@style/AppTheme">
+        <activity android:name="com.github.amitkma.helloandroid.MainActivity">
+             <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+             </intent-filter>
+        </activity>
+    </application>
+</manifest>
