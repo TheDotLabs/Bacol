@@ -2,7 +2,8 @@
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT)
 
-Show some :heart: and star :star: the repo to support the project or Tweet about it [![Twitter](https://img.shields.io/twitter/url/https/github.com/xsahil03x/giffy_dialog.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Famitkma%2FBacol)
+Show some :heart: and star :star: the repo to support the project or [Tweet](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Famitkma%2FBacol) about it.
+
 ## What is Bacol:question:
 Build Apk from Command-Line (aka. Bacol) is a bash script based micro build tool which can be used to compile basic android apps without any large scale build tool like Gradle, Buck or Bazel etc. Though, there are certain limitation of this build tool which are mentioned below.
 
@@ -124,4 +125,4 @@ On successful execution of bacol, you can find the signed apk in `out` directory
 - [ ] Allow user to select compileSdk.
 
 ## Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/amitka/Bacol.
+Bug reports and pull requests are welcome on GitHub at https://github.com/amitkma/Bacol.
