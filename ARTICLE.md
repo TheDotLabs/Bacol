@@ -233,7 +233,9 @@ rm -f app_unsigned.apk
 adb install out/app_signed.apk
 adb shell am start -n com.amitkma.androidstudiowithoutide/.MainActivity
 ```
-You should see this screen. 
+This screens should be displayed if everything goes well.
+
+![Result](sample_result.jpg)
 
 If you get any error while starting your application, try the following command to debug the issue. 
 ```bash
