@@ -4,29 +4,29 @@
 
 Show some :heart: and star :star: the repo to support the project or [Tweet](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Famitkma%2FBacol) about it.
 
-## What is Bacol:question:
-Build Apk from Command-Line (aka. Bacol) is a bash script based micro build tool which can be used to compile basic android apps without any large scale build tool like Gradle, Buck or Bazel etc. Though, there are certain limitation of this build tool which are mentioned below.
+## What is Bacol :question:
+Build Apk from Command-Line (aka. Bacol) is a bash script-based micro build tool which can be used to compile basic Android apps without any large-scale build tool like Gradle, Buck, or Bazel etc. However, there are certain limitations of this build tool which are mentioned below.
 
-## How can I use it in my Project:question:
-Using Bacol is pretty straight-forward. But there are certain prerequisites and specified project structure which you have to ensure before using this tool script in your project. 
+## How can I use it in my Project :question:
+Using Bacol is pretty straightforward. But there are certain prerequisites and specified project structures which you have to ensure before using this tool script in your project. 
 
-### And what are those prerequisites:question:
-:one: You have bash supported OS.
+### And what are those prerequisites :question:
+:one: You have bash-supported OS.
 
-:two: `ANDROID_HOME` enviornment variable is defined and contains a valid SDK installation.
+:two: The `ANDROID_HOME` environment variable is defined and contains a valid SDK installation.
 
-:three: JDK is setup.
+:three: JDK is set up.
 
 ### Required Project Structure
 Your project must have the following project strucutre in order for Bacol to recognize them.
 
 ```bash
-├── src # contains java source code.
+├── src # contains Java source code.
 │   ├── com
 │   │   ├── github
 │   │   │   ├── amitkma
 │   │   │   │   ├── helloandroid
-├── res # contains android resources like colors, drawables, values etc.
+├── res # contains Android resources like colors, drawables, values etc.
 │   ├── layout
 │   ├── ...
 │   └── values
@@ -37,9 +37,9 @@ Your project must have the following project strucutre in order for Bacol to rec
 ├── AndroidManifest.xml # Android Manifest file  
 └── bacol.sh # Bacol Build Tool Script
 ```
-- src: All your java related source code must go into this directory.
-- res: Android related resources like colors, drawables, animations, and values, etc. must belong to this directory. 
-- libs: If your project requires any dependency, put those into this directories. Currently, Bacol supports only jar libraries. If you want to use AAR libraries (for example, appcompat support library), extract the jar and resources from it and then put jar into `libs` and resources of AAR in a directory inside `libs`.
+- src: All your Java-related source code must go into this directory.
+- res: Android-related resources like colors, drawables, animations, and values, etc. must belong to this directory. 
+- libs: If your project requires any dependency, put those into these directories. Currently, Bacol supports only jar libraries. If you want to use AAR libraries (for example, appcompat support library), extract the jar and resources from it and then put jar into `libs` and resources of AAR in a directory inside `libs`.
 - bacol.sh: Copy/Download the `bacol.sh` from this project and add it in the root of your project.
 
 ### Using Bacol
@@ -78,7 +78,7 @@ The password for the signer's private key, which is needed if the private key is
 - `pass:<password>` – Password provided inline with the rest of the apksigner sign command.
 - `env:<name>` – Password is stored in the given environment variable.
 - `file:<filename>` – Password is stored as a single line in the given file.
-- `stdin` – Password is provided as a single line in the standard input stream. This is the default behavior for --key-pass
+- `stdin` – Password is provided as a single line in the standard input stream. This is the default behaviour for --key-pass
 
 `--ks-type <algorithm>`
 
@@ -107,22 +107,22 @@ The name of the file that contains the signer's certificate chain. This file mus
 - `./bacol.sh --ks /home/amit/.android/debug.keystore --ks-pass pass:android`
 - `./bacol.sh --key /home/amit/test/key.pk8 --cert /home/amit/test/cert.x509.pem`
 
-On successful execution of bacol, you can find the signed apk in `out` directory of the project.
+On successful execution of bacol, you can find the signed apk in the `out` directory of the project.
 
-## What are the limitations of Bacol:question:
+## What are the limitations of Bacol :question:
 1. Currently it doesn't support incremental compilation.
 2. AARs are not directly supported.
 3. Slow when compiling a large project.
-4. No kotlin support
+4. No Kotlin support
 5. Code generation at compile time using annotations doesn't work.
 6. You can't specify the compileSdkVersion. Bacol currently picks the latest available in your SDK.
-7. Required a fix project structure. 
+7. Required a fixed project structure. 
 
-## Future prospects in priority order.
+## Prospects in priority order.
 - [ ] Support Kotlin and AARs
 - [ ] Perform incremental compilation
 - [ ] Respect annotations and code generation
-- [ ] Allow user to select compileSdk.
+- [ ] Allow the user to select compileSdk.
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/amitkma/Bacol.
